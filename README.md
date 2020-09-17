@@ -1,20 +1,4 @@
-# ASP.NET Core
-# Build and test ASP.NET Core projects targeting .NET Core.
-# Add steps that run tests, create a NuGet package, deploy, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
-
-trigger:
-- master
-
-pool:
-  vmImage: 'ubuntu-latest'
-
-variables:
-  buildConfiguration: 'Release'
-
-steps:
-- script: dotnet build --configuration $(buildConfiguration)
-  displayName: 'dotnet build $(buildConfiguration)'
+[![Build Status](https://dev.azure.com/surudras/NetCore/_apis/build/status/surudran.pipelines-dotnet-core?branchName=master)](https://dev.azure.com/surudras/NetCore/_build/latest?definitionId=1&branchName=master)
 
 
 # Sample ASP.NET Core application for Azure Pipelines docs
